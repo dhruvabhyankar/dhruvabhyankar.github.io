@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Dhruv Abhyankar — Electronics and Communication Engineering, embedded systems, IoT and applied AI.">
+<title>Dhruv Abhyankar | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{--bg:#171717;--panel:#202020;--panel2:#242424;--ink:#f0efec;--muted:#c0bfbd;--soft:#969491;--gold:#d9a45b;--gold2:#b98543;--line:#51483d;--line2:#393735;--max:1500px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:36px}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.85 "DM Sans",sans-serif}.shell{max-width:var(--max);margin:auto;min-height:100vh;display:grid;grid-template-columns:minmax(330px,36%) 1fr}
+a{color:inherit;text-decoration:none}
+.sidebar{background:#22211f;min-height:100vh;padding:42px clamp(25px,3.2vw,52px);position:sticky;top:0;height:100vh;display:flex;flex-direction:column;align-items:center;text-align:center;border-right:1px solid #38332d}
+.mark{width:100%;display:flex;align-items:center;gap:17px;color:var(--gold);font-size:12px;letter-spacing:2px;margin:4px 0 35px}.mark:before,.mark:after{content:"";height:1px;background:var(--gold2);flex:1}
+.nav{display:flex;justify-content:center;flex-wrap:wrap;gap:20px;margin-bottom:32px}.nav a{font-size:14px;font-weight:600;color:#e3e0db;transition:color .2s}.nav a:hover{color:var(--gold)}
+.portrait{width:240px;height:240px;min-width:240px;min-height:240px;max-width:240px;max-height:240px;aspect-ratio:1;background:#b8b8b8;border:3px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;padding:0;overflow:hidden;position:relative}
+.portrait:before{display:none!important;content:none!important}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:50%;background:#b8b8b8}
+.portrait-inner{display:none}
+.name{font:500 clamp(27px,2.6vw,39px)/1.2 "Manrope",sans-serif;color:var(--gold);margin:23px 0 9px;letter-spacing:-.8px}.role{font-size:16px;line-height:1.6;color:#e4e1dc;max-width:330px}.location{font-size:13px;color:#aaa6a0;margin-top:9px}
+.socials{display:flex;gap:21px;margin-top:25px}.socials a{color:var(--gold);font-size:13px;font-weight:700;border-bottom:1px solid transparent;padding-bottom:3px}.socials a:hover{border-color:var(--gold)}
+.side-note{margin-top:auto;padding-top:28px;color:#8d8983;font-size:11px;letter-spacing:.6px}
+.content{padding:60px clamp(30px,4vw,68px) 45px;max-width:1050px;width:100%;margin:0 auto}
+.section{margin:0 0 70px;scroll-margin-top:35px}.section-title{font:500 clamp(31px,3vw,43px)/1.2 "Manrope",sans-serif;color:var(--gold);letter-spacing:-.8px;margin:0 0 24px;padding-bottom:13px;border-bottom:2px dotted var(--gold2)}
+.intro p{font-size:clamp(16px,1.35vw,19px);line-height:1.95;color:#d0ceca;margin:0 0 17px}.intro p strong{color:#f5f1e9;font-weight:600}
+.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px}
+.entry{display:grid;grid-template-columns:58px 1fr;gap:18px;padding:19px 0;border-bottom:1px solid var(--line2)}.entry:last-child{border-bottom:0}
+.entry-num{color:var(--gold);font:600 14px "Manrope";padding-top:3px}
+.entry h3{font:600 clamp(18px,1.55vw,22px)/1.4 "Manrope";margin:0 0 4px;color:#f1efeb;letter-spacing:-.3px}.entry .org{font-size:15px;color:#d1cfca}.entry .date{font-size:13px;color:#aaa59e;font-style:italic;margin-top:3px}.entry p,.entry li{font-size:15px;color:#c0bfbd;line-height:1.8}.entry p{margin:9px 0 0}.entry ul{margin:8px 0 0;padding-left:20px}.entry li{margin:3px 0}
+.project{padding:20px 0;border-bottom:1px solid var(--line2)}.project:last-child{border:0}.project h3{font:600 clamp(19px,1.7vw,23px)/1.4 "Manrope";margin:0 0 8px;color:#f1efeb}.project p{font-size:15px;line-height:1.85;color:#c0bfbd;margin:0 0 9px}.tags{font-size:12px;color:var(--gold);letter-spacing:.25px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.tag{padding:8px 12px;border:1px solid #61513f;background:#242321;border-radius:3px;color:#e3c18f;font-size:13px}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:36px}.columns .section{margin-bottom:52px}
+.award{padding:13px 0;border-bottom:1px solid var(--line2);font-size:15px;color:#e1ded8}.award small{display:block;color:#a9a49c;font-size:13px;margin-top:3px}
+.publication{border-left:3px solid var(--gold);background:#242321;padding:20px 22px}.publication h3{font:600 18px/1.5 "Manrope";margin:0 0 8px}.publication p{font-size:14px;color:#bdb9b2;margin:0}.publication a{display:inline-block;color:var(--gold);font-size:13px;font-weight:700;margin-top:13px;border-bottom:1px solid var(--gold2)}
+.contact-box{border:1px solid #65523a;background:#22211f;padding:28px 30px;border-radius:5px}.contact-box h2{font:500 31px "Manrope";color:var(--gold);margin:0 0 7px}.contact-box p{color:#c4c0b9;font-size:15px;margin:0}.contact-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:21px}.contact-links a{padding:9px 14px;border:1px solid #69563e;border-radius:3px;color:#e6c28b;font-size:13px}.contact-links a:hover{background:var(--gold);color:#211d18}
+footer{border-top:1px solid var(--line2);padding-top:20px;color:#85817a;font-size:12px;display:flex;justify-content:space-between;gap:15px}
+.reveal{opacity:0;transform:translateY(13px);transition:opacity .6s,transform .6s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){.shell{grid-template-columns:300px 1fr}.sidebar{padding:30px 22px}.nav{gap:13px}.nav a{font-size:12px}.content{padding:42px 28px}.columns{grid-template-columns:1fr;gap:0}}
+@media(max-width:680px){.shell{display:block}.sidebar{position:relative;height:auto;min-height:0;padding:25px 22px 30px;border-right:0;border-bottom:1px solid #38332d}.mark{margin:0 0 22px}.nav{margin-bottom:22px}.portrait{width:210px;height:210px;min-width:210px;min-height:210px;max-width:210px;max-height:210px}.name{font-size:31px;margin-top:18px}.side-note{display:none}.content{padding:38px 22px}.section{margin-bottom:52px}.section-title{font-size:32px}.entry{grid-template-columns:35px 1fr;gap:12px}.entry p,.entry li,.project p{font-size:14px}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar">
+<nav class="nav"><a href="#education">Education</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+<div class="portrait" style="width:240px;height:240px;aspect-ratio:1;border-radius:50%;margin:0 auto;overflow:hidden;padding:0;"><img src="profile.jpg" alt="Dhruv Abhyankar" style="width:100%;height:100%;object-fit:cover;object-position:center;border-radius:50%;"></div>
+<h1 class="name">Dhruv Abhyankar</h1>
+<div class="role">Electronics & Communication Engineering<br>Embedded Systems · IoT · AI & ML</div>
+<div class="location">Pune, Maharashtra, India</div>
+<div class="socials"><a href="https://www.linkedin.com/in/dhruvabhyankar/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:dhruvabhyankar7@gmail.com">Email</a><a href="https://github.com/dhruvabhyankar" target="_blank" rel="noreferrer">GitHub</a></div>
+<div class="side-note">ENGINEERING · TECHNOLOGY · INNOVATION</div>
+</aside>
+<main class="content">
+<section class="section intro reveal" id="about"><div class="eyebrow">PROFILE / 01</div><h2 class="section-title">About</h2>
+<p>Hello, I'm <strong>Dhruv Abhyankar</strong>, an Electronics and Communication Engineering student specialising in Artificial Intelligence and Machine Learning at MIT World Peace University, Pune.</p>
+<p>My interests lie at the intersection of <strong>embedded systems, connected technologies and applied machine learning</strong>. Through academic projects and industry experience, I have worked with microcontrollers, sensor integration, communication protocols, industrial control systems and computer vision.</p>
+<p>I enjoy approaching engineering challenges with curiosity and a practical mindset — bringing hardware and software together to build useful, reliable solutions.</p>
+</section>
+<section class="section reveal" id="education"><div class="eyebrow">ACADEMIC BACKGROUND / 02</div><h2 class="section-title">Education</h2>
+<div class="entry"><div class="entry-num">01</div><div><h3>B.Tech — Electronics & Communication Engineering with AI & ML</h3><div class="org">MIT World Peace University · Pune, India</div><div class="date">July 2025 — June 2028</div><p>CGPA: 9.61</p></div></div>
+<div class="entry"><div class="entry-num">02</div><div><h3>Undergraduate Diploma — Electronics & Communication Engineering with AI & ML</h3><div class="org">MIT World Peace University · Pune, India</div><div class="date">July 2022 — June 2025</div><p>CGPA: 9.73 · Department Topper · Gold Medallist</p></div></div>
+</section>
+<section class="section reveal" id="experience"><div class="eyebrow">PROFESSIONAL BACKGROUND / 03</div><h2 class="section-title">Experience</h2>
+<div class="entry"><div class="entry-num">01</div><div><h3>Engineering Intern</h3><div class="org">P & R Control Systems Pvt. Ltd. · Pune</div><div class="date">January 2025 — May 2025</div><ul><li>Designed base screens for ABB HMI interfaces and mapped feedback signals.</li><li>Prepared Bills of Materials and price quotations for industrial switchgear systems.</li><li>Programmed and configured VFDs for industrial motor control.</li><li>Supported control-panel assembly, wiring, testing and troubleshooting.</li></ul></div></div>
+</section>
+<section class="section reveal" id="projects"><div class="eyebrow">SELECTED WORK / 04</div><h2 class="section-title">Projects</h2>
+<article class="project"><h3>Gesture Recognition Using TinyML on C8051F340</h3><p>Developed a real-time gesture recognition system using an MPU6050 IMU and C8051F340 microcontroller. Processed accelerometer data, extracted statistical features and implemented a lightweight decision-tree classifier for directional gestures.</p><div class="tags">C8051F340 · MPU6050 · Embedded C · I²C · SPI</div></article>
+<article class="project"><h3>IoT-Based Soil Quality Index System</h3><p>Developed a real-time soil monitoring system for NPK nutrients and moisture. Implemented Modbus RTU over RS485, calculated a normalized Soil Quality Index and uploaded readings to ThingSpeak for dashboard visualisation.</p><div class="tags">ESP8266 · MAX485 · Modbus RTU · ThingSpeak</div><a class="publication-link" href="https://ieeexplore.ieee.org/document/11484777" target="_blank" rel="noreferrer">Related IEEE publication ↗</a></article>
+<article class="project"><h3>Speed Breaker & Pothole Detection and Alarm System</h3><p>Trained a YOLOv5 model on more than 1,400 labelled images, achieving 75% mAP. Built a camera-based detection pipeline with ultrasonic verification for real-time alerts.</p><div class="tags">Raspberry Pi 5 · Python · OpenCV · ONNX Runtime · YOLOv5</div></article>
+</section>
+<section class="section reveal" id="skills"><div class="eyebrow">TECHNICAL TOOLKIT / 05</div><h2 class="section-title">Skills & Tools</h2><div class="skills"><span class="tag">Embedded C</span><span class="tag">Python</span><span class="tag">Microcontrollers</span><span class="tag">IoT</span><span class="tag">TinyML</span><span class="tag">Machine Learning</span><span class="tag">OpenCV</span><span class="tag">YOLOv5</span><span class="tag">MATLAB</span><span class="tag">Modbus RTU</span><span class="tag">I²C / SPI / UART</span><span class="tag">Keil µVision</span><span class="tag">Arduino IDE</span><span class="tag">Altium Designer</span><span class="tag">NI Multisim</span><span class="tag">ThingSpeak</span><span class="tag">HMI / VFD</span></div></section>
+<div class="columns">
+
+<section class="section reveal"><div class="eyebrow">TRAINING / 06</div><h2 class="section-title">Technical Training & Certifications</h2><div class="award"><strong>Industrial Training Programme — AI & Machine Learning</strong><small>International Automobile Centre of Excellence (iACE) · June 2026</small><small>Automotive electronics, embedded systems, CAN/LIN communication, ADAS, sensors, microcontrollers and Industry 4.0.</small></div><div class="award"><strong>MATLAB & Signal Processing</strong><small>MathWorks · October 2025 – August 2026</small><small>MATLAB Onramp, Signal Processing Onramp and Simulink Onramp.</small></div><div class="award"><strong>PCB Basic Design Course</strong><small>Altium Education · January 2026</small><small>PCB design and ECAD using Altium Designer.</small></div><div class="award"><strong>National Academic Immersion Program — IoT</strong><small>Sreenidhi Institute of Science and Technology · March 2024</small><small>Internet of Things concepts and applications.</small></div><div class="award"><strong>Academic Excellence Award</strong><small>MIT World Peace University · 2022–2025</small></div></section>
+
+<section class="section reveal"><div class="eyebrow">RESEARCH / 07</div><h2 class="section-title">Publication</h2><div class="publication"><h3>IoT-Based Soil Quality Index System Using NPK and Moisture Data for Smart Agriculture</h3><p>IEEE conference publication · 2026</p><a href="https://ieeexplore.ieee.org/document/11484777" target="_blank" rel="noreferrer">View publication ↗</a></div><div style="margin-top:28px"><div class="eyebrow">LANGUAGES</div><p style="font-size:14px;color:#c0bfbd">English (C1) · German (A1) · Marathi (Native) · Hindi (Native)</p></div></section>
+</div>
+<section class="section reveal" id="contact"><div class="contact-box"><div class="eyebrow">GET IN TOUCH / 08</div><h2>Let's connect.</h2><p>For professional opportunities, collaborations or conversations around embedded systems, IoT and applied AI, feel free to reach out.</p><div class="contact-links"><a href="mailto:dhruvabhyankar7@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/dhruvabhyankar/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/dhruvabhyankar" target="_blank" rel="noreferrer">GitHub ↗</a><a href="YOUR_RESUME_LINK" target="_blank" rel="noreferrer">Resume ↗</a></div></div>
+</section>
+<footer><span>© <span id="year"></span> Dhruv Abhyankar</span></footer>
+</main>
+</div>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.07});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
